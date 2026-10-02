@@ -1,0 +1,2006 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #e9e7ec;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   COLOR
+========================================================= */
+
+:root {
+  --pink: #d41461;
+  --pink-dark: #c20f55;
+  --maroon: #741719;
+  --maroon-dark: #591416;
+  --border: #dedede;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+  position: relative;
+
+  width: 100%;
+  max-width: 340px;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.navbar {
+  position: relative;
+
+  width: 100%;
+  height: 86px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 44%,
+    var(--maroon) 44%,
+    var(--maroon) 100%
+  );
+
+  box-shadow: none;
+
+  z-index: 10;
+}
+
+/* =========================================================
+   LOGO SELANGOR
+========================================================= */
+
+.navbar-logo {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 44%;
+  height: 86px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #ffffff;
+}
+
+.navbar-img {
+  width: 62px;
+  height: 62px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* =========================================================
+   HILANGKAN MENU BAHASA
+========================================================= */
+
+.navbar-nav {
+  display: none !important;
+}
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.navbar::after {
+  content: "";
+
+  position: absolute;
+
+  right: 20px;
+  top: 27px;
+
+  width: 48px;
+  height: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 5px;
+
+  background:
+    linear-gradient(#bdbdbd, #bdbdbd) center 9px / 23px 2px no-repeat,
+    linear-gradient(#bdbdbd, #bdbdbd) center 16px / 23px 2px no-repeat,
+    linear-gradient(#bdbdbd, #bdbdbd) center 23px / 23px 2px no-repeat;
+}
+
+/* =========================================================
+   BAR LOG MASUK
+========================================================= */
+
+.login-bar {
+  width: 100%;
+  height: 33px;
+
+  display: flex;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: var(--maroon);
+
+  position: relative;
+
+  z-index: 5;
+}
+
+.login-side {
+  width: 26%;
+
+  background: var(--maroon-dark);
+}
+
+.login-title {
+  width: 48%;
+
+  height: 33px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #ffd82f 0%, #f35a45 48%, #bc292b 100%);
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 33px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   HERO / CONTENT
+========================================================= */
+
+.hero {
+  width: 100%;
+
+  min-height: calc(100vh - 119px);
+
+  padding: 0 17px 58px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   LOGO BINGKAS
+========================================================= */
+
+.bingkas-login-logo {
+  width: 95px !important;
+  height: auto !important;
+
+  display: block !important;
+
+  margin: 17px auto 10px !important;
+
+  padding: 0 !important;
+
+  object-fit: contain;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+/* =========================================================
+   JUDUL LAMA - SEMBUNYIKAN
+========================================================= */
+
+.hero > h4 {
+  display: none;
+}
+
+/* =========================================================
+   FORM CONTAINER
+========================================================= */
+
+.form-container {
+  width: 100%;
+
+  max-width: 286px;
+
+  margin: 0 auto;
+
+  padding: 0 20px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 5px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  display: block;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+#registrationForm {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* =========================================================
+   DESKRIPSI
+========================================================= */
+
+.login-description {
+  width: 100%;
+
+  margin: 14px 0 8px;
+
+  padding: 0 4px;
+
+  color: var(--pink);
+
+  font-size: 12px;
+
+  line-height: 1.55;
+
+  text-align: center;
+
+  font-weight: 400;
+}
+
+.login-description strong {
+  font-weight: 700;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.form-label {
+  width: 100%;
+
+  margin: 0 0 6px;
+
+  padding: 0;
+
+  color: var(--pink);
+
+  font-size: 14px;
+
+  line-height: 20px;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+/* label nomor telepon */
+
+.phone-label {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+/* =========================================================
+   INPUT NAMA
+========================================================= */
+
+#name {
+  width: 100% !important;
+
+  height: 30px;
+
+  margin: 0 !important;
+
+  padding: 5px 10px;
+
+  border: 1px solid #e32b72;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #555555;
+
+  font-size: 11px;
+
+  text-align: center;
+
+  outline: none;
+}
+
+#name::placeholder {
+  color: #777777;
+
+  opacity: 1;
+}
+
+#name:focus {
+  border-color: var(--pink);
+  outline: none;
+}
+
+/* =========================================================
+   TELEPHONE INPUT
+========================================================= */
+
+.iti {
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+}
+
+.iti input[type="tel"] {
+  width: 100% !important;
+
+  height: 35px !important;
+
+  margin: 0 !important;
+
+  padding: 7px 8px 7px 48px !important;
+
+  border: 1px solid #dddddd !important;
+
+  border-radius: 4px !important;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  font-size: 12px;
+
+  outline: none;
+}
+
+.iti input[type="tel"]:focus {
+  border-color: var(--pink) !important;
+
+  outline: none;
+}
+
+/* =========================================================
+   FLAG / COUNTRY
+========================================================= */
+
+.iti__flag-container {
+  height: 35px;
+
+  z-index: 5;
+}
+
+.iti__selected-flag {
+  height: 35px !important;
+
+  padding: 0 7px !important;
+
+  background: #eeeeee !important;
+}
+
+.iti__selected-dial-code {
+  font-size: 11px;
+
+  color: #333333;
+}
+
+/* =========================================================
+   TOMBOL LOGIN
+========================================================= */
+
+.btn {
+  width: 160px;
+
+  height: 29px;
+
+  margin: 18px auto 0;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: var(--pink);
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  line-height: 29px;
+
+  cursor: pointer;
+
+  box-shadow: none;
+
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--pink-dark);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* =========================================================
+   LUPA PASSWORD
+========================================================= */
+
+.forgot-password {
+  display: block;
+
+  margin-top: 14px;
+
+  color: var(--pink);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-decoration: underline;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   GARIS PEMISAH
+========================================================= */
+
+.separator {
+  width: 140px;
+
+  height: 1px;
+
+  margin: 14px auto 13px;
+
+  background: #cccccc;
+}
+
+/* =========================================================
+   REGISTER
+========================================================= */
+
+.register-text {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--pink);
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  text-align: center;
+}
+
+.register-text span {
+  display: block;
+
+  color: var(--pink);
+}
+
+.register-text a {
+  display: block;
+
+  margin-top: 1px;
+
+  color: var(--pink);
+
+  font-weight: 700;
+
+  text-decoration: underline;
+}
+
+/* =========================================================
+   RECORD BOX
+   TETAP ADA UNTUK FUNGSI LAMA
+========================================================= */
+
+._record-box {
+  display: none;
+
+  width: 100%;
+
+  max-width: 286px;
+
+  margin: 10px auto;
+
+  padding: 5px;
+
+  background: #ffffff;
+
+  border-radius: 5px;
+}
+
+.list-box {
+  max-height: 219px;
+
+  overflow-y: auto;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.list-box::-webkit-scrollbar {
+  display: none;
+}
+
+.list .item {
+  display: flex;
+
+  align-items: center;
+
+  padding: 5px;
+
+  margin-bottom: 4px;
+
+  border: 1px solid var(--pink);
+
+  border-radius: 5px;
+}
+
+.record_logo {
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.record_logo img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+
+.center {
+  flex: 1;
+}
+
+.center .h1 {
+  color: #222222;
+
+  font-size: 12px;
+
+  margin-bottom: 4px;
+}
+
+.center .h2 {
+  color: #9e9e9e;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  position: fixed;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 340px;
+
+  height: 47px;
+
+  margin: 0;
+
+  padding: 0 10px;
+
+  background: linear-gradient(to right, #f34b50, #81292c);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 9999;
+
+  font-size: 0;
+}
+
+/* PENTING:
+   Hilangkan footer::before dari CSS lama
+*/
+
+footer::before {
+  display: none !important;
+
+  content: none !important;
+}
+
+.footer-content {
+  width: 100%;
+
+  height: 47px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+}
+
+.footer-content span {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.footer-content img {
+  width: auto;
+
+  max-width: 82px;
+
+  max-height: 37px;
+
+  height: auto;
+
+  margin: 0;
+
+  padding: 0;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading-screen {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(45, 45, 45, 0.895);
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  z-index: 10000;
+}
+
+.loading-screen img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* =========================================================
+   OTP
+========================================================= */
+
+.otp-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 10px auto 20px;
+}
+
+.otp-input {
+  width: 40px;
+
+  height: 40px;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  border: 1px solid var(--pink);
+
+  border-radius: 5px;
+
+  appearance: textfield;
+}
+
+.otp-input::-webkit-outer-spin-button,
+.otp-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+  margin: 0;
+}
+
+.otp-input:focus {
+  outline: none;
+
+  border-color: var(--pink);
+
+  box-shadow: 0 0 3px rgba(212, 20, 97, 0.3);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 360px) {
+  .page {
+    max-width: 100%;
+  }
+
+  .navbar {
+    height: 82px;
+  }
+
+  .navbar-logo {
+    height: 82px;
+  }
+
+  .navbar-img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .login-bar,
+  .login-title {
+    height: 32px;
+  }
+
+  .hero {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .form-container {
+    max-width: 286px;
+  }
+
+  footer {
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 600px) {
+  body {
+    padding: 10px 0;
+  }
+
+  .page {
+    min-height: calc(100vh - 20px);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  }
+
+  footer {
+    bottom: 10px;
+  }
+}
+
+/* =========================================================
+   =========================================================
+   PAGE 2 - OTP
+   CSS KHUSUS, TIDAK MENGGANGGU PAGE 1
+   =========================================================
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   PAGE 2
+--------------------------------------------------------- */
+
+#page2 {
+  position: relative;
+
+  width: 100%;
+  max-width: 340px;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  color: #111111;
+}
+
+/* ---------------------------------------------------------
+   HEADER PAGE 2
+--------------------------------------------------------- */
+
+#page2 .navbar {
+  position: relative;
+
+  width: 100%;
+  height: 86px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 44%,
+    #741719 44%,
+    #741719 100%
+  );
+
+  box-shadow: none;
+
+  z-index: 20;
+}
+
+/* LOGO SELANGOR */
+
+#page2 .navbar-logo {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 44%;
+  height: 86px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #ffffff;
+}
+
+#page2 .navbar-img {
+  width: 62px !important;
+  height: 62px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  object-fit: contain;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+/* SEMBUNYIKAN MENU BAHASA */
+
+#page2 .navbar-nav {
+  display: none !important;
+}
+
+/* HAMBURGER */
+
+#page2 .navbar::after {
+  content: "";
+
+  position: absolute;
+
+  right: 18px;
+  top: 27px;
+
+  width: 48px;
+  height: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 5px;
+
+  background:
+    linear-gradient(#c2c2c2, #c2c2c2) center 9px / 23px 2px no-repeat,
+    linear-gradient(#c2c2c2, #c2c2c2) center 16px / 23px 2px no-repeat,
+    linear-gradient(#c2c2c2, #c2c2c2) center 23px / 23px 2px no-repeat;
+}
+
+/* ---------------------------------------------------------
+   BAR LOG MASUK
+--------------------------------------------------------- */
+
+#page2 .login-bar {
+  width: 100%;
+  height: 33px;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  background: #711719;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+#page2 .login-side {
+  width: 26%;
+
+  height: 33px;
+
+  background: #591416;
+}
+
+#page2 .login-title {
+  width: 48%;
+  height: 33px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #ffd72e 0%, #f35b43 48%, #bd292c 100%);
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 33px;
+
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   HERO PAGE 2
+--------------------------------------------------------- */
+
+#page2 .hero {
+  width: 100%;
+
+  min-height: calc(100vh - 119px);
+
+  margin: 0;
+  padding: 0 12px 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  background: #ffffff;
+}
+
+/* ---------------------------------------------------------
+   LOGO BINGKAS PAGE 2
+--------------------------------------------------------- */
+
+/*
+   INI SENGAJA SANGAT SPESIFIK.
+   Jadi .hero img dari CSS lama tidak bisa
+   membesarkan logo lagi.
+*/
+
+#page2 .bingkas-otp-logo {
+  width: 82px !important;
+  max-width: 82px !important;
+
+  height: auto !important;
+  max-height: none !important;
+
+  margin: 38px auto 24px !important;
+
+  padding: 0 !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+/* JIKA HTML MASIH MENGGUNAKAN
+   class bingkas-login-logo */
+
+#page2 .bingkas-login-logo {
+  width: 82px !important;
+  max-width: 82px !important;
+
+  height: auto !important;
+
+  margin: 38px auto 24px !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+
+  border: none !important;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+/* ---------------------------------------------------------
+   KOTAK OTP
+--------------------------------------------------------- */
+
+#page2 .otp-card {
+  width: 100% !important;
+
+  max-width: 302px !important;
+
+  min-height: 274px;
+
+  margin: 0 auto !important;
+
+  padding: 20px 14px 15px !important;
+
+  background: #ffffff !important;
+
+  border: 1px solid #dddddd !important;
+
+  border-radius: 4px !important;
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16) !important;
+
+  display: block !important;
+}
+
+/* ---------------------------------------------------------
+   PESAN OTP
+--------------------------------------------------------- */
+
+#page2 .otp-message {
+  width: 100%;
+
+  min-height: 135px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 25px;
+
+  margin: 0 0 5px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+}
+
+#page2 .otp-message p {
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  color: #d41461 !important;
+
+  font-size: 12px !important;
+
+  line-height: 1.45 !important;
+
+  text-align: center !important;
+
+  font-weight: 400 !important;
+}
+
+#page2 .otp-message strong {
+  color: #d41461;
+
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------
+   FORM OTP
+--------------------------------------------------------- */
+
+#page2 #otpForm {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* ---------------------------------------------------------
+   JUDUL OTP
+--------------------------------------------------------- */
+
+#page2 .otp-title {
+  display: block;
+
+  width: 100%;
+
+  margin: 3px 0 8px !important;
+
+  padding: 0 !important;
+
+  color: #111111 !important;
+
+  font-size: 14px !important;
+
+  line-height: 1.55 !important;
+
+  font-weight: 500 !important;
+
+  text-align: center !important;
+}
+
+/* ---------------------------------------------------------
+   OTP INPUT
+--------------------------------------------------------- */
+
+#page2 .otp-container {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 0 !important;
+
+  margin: 0 0 14px !important;
+
+  padding: 0;
+}
+
+/*
+   Lima kotak dibuat seperti SATU INPUT panjang.
+   ID otp-1 sampai otp-5 tetap terpisah.
+*/
+
+#page2 .otp-input {
+  width: 20% !important;
+
+  height: 34px !important;
+
+  margin: 0 !important;
+
+  padding: 5px !important;
+
+  border: 1px solid #dddddd !important;
+
+  border-right: none !important;
+
+  border-radius: 0 !important;
+
+  background: #ffffff !important;
+
+  color: #333333 !important;
+
+  font-size: 14px !important;
+
+  text-align: center !important;
+
+  appearance: textfield;
+
+  outline: none;
+}
+
+/* ujung kiri */
+
+#page2 .otp-input:first-child {
+  border-radius: 4px 0 0 4px !important;
+}
+
+/* ujung kanan */
+
+#page2 .otp-input:last-child {
+  border-right: 1px solid #dddddd !important;
+
+  border-radius: 0 4px 4px 0 !important;
+}
+
+/* focus */
+
+#page2 .otp-input:focus {
+  border-color: #d41461 !important;
+
+  box-shadow: none !important;
+
+  z-index: 2;
+}
+
+/* hilangkan spinner */
+
+#page2 .otp-input::-webkit-outer-spin-button,
+#page2 .otp-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   BUTTON OTP
+--------------------------------------------------------- */
+
+#page2 .otp-button {
+  width: 162px !important;
+
+  height: 29px !important;
+
+  margin: 0 auto !important;
+
+  padding: 0 !important;
+
+  display: flex !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+
+  border: none !important;
+
+  border-radius: 18px !important;
+
+  background: #d41461 !important;
+
+  color: #ffffff !important;
+
+  font-size: 11px !important;
+
+  font-weight: 700 !important;
+
+  line-height: 29px !important;
+
+  box-shadow: none !important;
+}
+
+/* ---------------------------------------------------------
+   KETERANGAN KISS
+--------------------------------------------------------- */
+
+#page2 .kiss-info {
+  width: 230px;
+
+  margin: 27px auto 0;
+
+  padding: 0;
+
+  color: #d41461;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  text-align: center;
+
+  font-weight: 400;
+}
+
+#page2 .kiss-info strong {
+  color: #d41461;
+
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------
+   RECORD BOX
+--------------------------------------------------------- */
+
+/*
+   Tidak ditampilkan di tampilan.
+   Tetapi elemen + ID list tetap ada untuk fungsi lama.
+*/
+
+#page2 ._record-box {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------
+   FOOTER PAGE 2
+--------------------------------------------------------- */
+
+/*
+   Screenshot yang kamu mau TIDAK memiliki
+   footer Malaysia Madani.
+*/
+
+#page2 footer {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------
+   SEMUA IMG LAIN DI PAGE2
+   cegah CSS .hero img lama mengacaukan ukuran
+--------------------------------------------------------- */
+
+#page2 .hero > img:not(.bingkas-otp-logo):not(.bingkas-login-logo) {
+  width: auto !important;
+
+  max-width: 100%;
+
+  height: auto !important;
+
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 360px) {
+  #page2 {
+    max-width: 100%;
+  }
+
+  #page2 .navbar {
+    height: 82px;
+  }
+
+  #page2 .navbar-logo {
+    height: 82px;
+  }
+
+  #page2 .navbar-img {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  #page2 .login-bar,
+  #page2 .login-title,
+  #page2 .login-side {
+    height: 32px;
+  }
+
+  #page2 .bingkas-otp-logo,
+  #page2 .bingkas-login-logo {
+    width: 78px !important;
+    max-width: 78px !important;
+
+    margin-top: 34px !important;
+  }
+
+  #page2 .otp-card {
+    max-width: 294px !important;
+  }
+
+  #page2 .otp-message {
+    min-height: 130px;
+  }
+}
+
+/* ---------------------------------------------------------
+   DESKTOP
+--------------------------------------------------------- */
+
+@media (min-width: 600px) {
+  #page2 {
+    min-height: calc(100vh - 20px);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* =====================================================
+   PAGE 3
+   ===================================================== */
+
+#page3 {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  color: #111;
+}
+
+/* ================= HEADER ================= */
+
+#page3 .navbar {
+  position: relative;
+
+  width: 100%;
+  height: 86px;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 44%,
+    #741719 44%,
+    #741719 100%
+  );
+
+  box-shadow: none;
+
+  z-index: 20;
+}
+
+#page3 .navbar-logo {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 44%;
+  height: 86px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+}
+
+#page3 .navbar-img {
+  width: 62px !important;
+  height: 62px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  object-fit: contain;
+
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#page3 .navbar-nav {
+  display: none !important;
+}
+
+/* HAMBURGER */
+
+#page3 .navbar::after {
+  content: "";
+
+  position: absolute;
+
+  right: 18px;
+  top: 27px;
+
+  width: 48px;
+  height: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+
+  background:
+    linear-gradient(#c2c2c2, #c2c2c2) center 9px / 23px 2px no-repeat,
+    linear-gradient(#c2c2c2, #c2c2c2) center 16px / 23px 2px no-repeat,
+    linear-gradient(#c2c2c2, #c2c2c2) center 23px / 23px 2px no-repeat;
+}
+
+/* ================= BAR ================= */
+
+#page3 .login-bar {
+  width: 100%;
+  height: 33px;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  background: #711719;
+}
+
+#page3 .login-side {
+  width: 26%;
+  height: 33px;
+
+  background: #591416;
+}
+
+#page3 .login-title {
+  width: 48%;
+  height: 33px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(to right, #ffd72e, #f35b43 48%, #bd292c);
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ================= CONTENT ================= */
+
+#page3 .hero {
+  width: 100%;
+
+  min-height: calc(100vh - 119px);
+
+  padding: 0 12px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fff;
+}
+
+/* ================= LOGO ================= */
+
+#page3 .bingkas-page3-logo {
+  width: 82px !important;
+  max-width: 82px !important;
+
+  height: auto !important;
+
+  margin: 38px auto 24px !important;
+
+  display: block !important;
+
+  object-fit: contain;
+
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ================= CARD ================= */
+
+#page3 .page3-card {
+  width: 100% !important;
+  max-width: 302px !important;
+
+  min-height: 235px;
+
+  margin: 0 auto !important;
+
+  padding: 20px 14px 15px !important;
+
+  background: #fff !important;
+
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16) !important;
+}
+
+/* ================= MESSAGE ================= */
+
+#page3 .page3-message {
+  width: 100%;
+
+  min-height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 3px;
+
+  color: #d41461;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+/* ================= LABEL ================= */
+
+#page3 .page3-label {
+  display: block;
+
+  width: 100%;
+
+  margin: 7px 0 8px;
+
+  color: #111;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+#page3 .page3-label span {
+  color: #777;
+}
+
+/* ================= INPUT ================= */
+
+#page3 #kata-sandi {
+  width: 100% !important;
+
+  height: 35px;
+
+  margin: 0 !important;
+
+  padding: 7px 10px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+
+  color: #333;
+
+  background: #fff;
+
+  outline: none;
+}
+
+#page3 #kata-sandi:focus {
+  border-color: #d41461;
+}
+
+/* ================= BUTTON ================= */
+
+#page3 .page3-button {
+  width: 162px !important;
+
+  height: 29px !important;
+
+  margin: 14px auto 0 !important;
+
+  padding: 0 !important;
+
+  display: flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none !important;
+  border-radius: 18px !important;
+
+  background: #d41461 !important;
+
+  color: #fff !important;
+
+  font-size: 11px !important;
+
+  font-weight: 700;
+
+  box-shadow: none !important;
+}
+
+/* ================= KISS ================= */
+
+#page3 .kiss-info {
+  width: 230px;
+
+  margin: 27px auto 0;
+
+  color: #d41461;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  text-align: center;
+}
+
+#page3 .kiss-info strong {
+  font-weight: 700;
+}
+
+/* ================= LOADING ================= */
+
+#page3 #loadingContent {
+  width: 100%;
+  text-align: center;
+}
+
+#page3 .page3-loading {
+  width: 50px !important;
+  height: auto !important;
+
+  margin: 20px auto !important;
+
+  display: block;
+}
+
+#page3 #formMessage {
+  color: #d41461;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+/* ================= OTHER PHONE ================= */
+
+#page3 .page3-other-button {
+  width: 100%;
+
+  padding: 10px;
+
+  margin: 20px auto 0;
+
+  background: #d41461;
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+/* ================= RECORD BOX ================= */
+
+#page3 ._record-box {
+  display: none !important;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 360px) {
+  #page3 {
+    max-width: 100%;
+  }
+
+  #page3 .navbar,
+  #page3 .navbar-logo {
+    height: 82px;
+  }
+
+  #page3 .navbar-img {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  #page3 .bingkas-page3-logo {
+    width: 78px !important;
+    margin-top: 34px !important;
+  }
+
+  #page3 .page3-card {
+    max-width: 294px !important;
+  }
+}
+
+/* =====================================================
+   FOOTER GLOBAL - UNTUK SEMUA PAGE
+===================================================== */
+
+/* =====================================================
+   FOOTER GLOBAL - SEMUA PAGE
+===================================================== */
+
+footer {
+  position: fixed;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 340px;
+
+  height: 43px;
+
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(to right, #f44b50 0%, #d83b40 45%, #8b292d 100%);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+
+  overflow: hidden;
+}
+
+/* ISI FOOTER */
+
+.footer-inner {
+  width: 100%;
+  height: 43px;
+
+  padding: 0 8px 0 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+/* TEKS KIRI */
+
+.footer-inner span {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  line-height: 43px;
+}
+
+/* LOGO SELCARE KANAN */
+
+.footer-inner img {
+  width: auto !important;
+
+  max-width: 82px !important;
+
+  height: 35px !important;
+
+  max-height: 35px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  object-fit: contain;
+
+  border: none !important;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+/* HILANGKAN STYLE FOOTER LAMA */
+
+footer::before {
+  display: none !important;
+
+  content: none !important;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+  footer {
+    max-width: 100%;
+
+    height: 43px;
+  }
+
+  .footer-inner {
+    height: 43px;
+
+    padding-left: 18px;
+    padding-right: 7px;
+  }
+
+  .footer-inner span {
+    font-size: 9px;
+  }
+
+  .footer-inner img {
+    max-width: 78px !important;
+
+    height: 34px !important;
+  }
+}

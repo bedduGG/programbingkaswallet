@@ -1,0 +1,379 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #e9e7ec;
+}
+
+/* =========================================================
+   WARNA
+========================================================= */
+
+:root {
+  --maroon: #701719;
+  --maroon-dark: #591416;
+  --pink: #d73579;
+  --purple: #514b9b;
+  --white: #ffffff;
+  --text: #555555;
+}
+
+/* =========================================================
+   HALAMAN MOBILE
+========================================================= */
+
+.mobile-page {
+  width: 100%;
+  max-width: 340px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-header {
+  width: 100%;
+  height: 82px;
+
+  display: flex;
+  align-items: stretch;
+
+  background: #ffffff;
+}
+
+/* bagian logo */
+.header-logo {
+  width: 44%;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* bagian merah */
+.header-menu {
+  width: 56%;
+  background: var(--maroon);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-right: 18px;
+}
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.menu-button {
+  width: 54px;
+  height: 54px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.02);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6px;
+
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+
+  width: 24px;
+  height: 2px;
+
+  background: #c9c9c9;
+
+  border-radius: 2px;
+}
+
+/* =========================================================
+   BAR LOG MASUK
+========================================================= */
+
+.login-bar {
+  width: 100%;
+  height: 33px;
+
+  display: flex;
+  align-items: stretch;
+
+  background: var(--maroon);
+}
+
+.login-bar-left {
+  width: 26%;
+  background: #571416;
+}
+
+.login-title {
+  width: 48%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(90deg, #ffdb32 0%, #f15b43 50%, #b72327 100%);
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.login-bar-right {
+  width: 26%;
+  background: #571416;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.content {
+  width: 100%;
+
+  padding: 22px 22px 85px;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   LOGO BINGKAS
+========================================================= */
+
+.bingkas-logo {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.bingkas-logo img {
+  width: 88%;
+  max-width: 270px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   KARTU INFORMASI
+========================================================= */
+
+.info-card {
+  width: 100%;
+
+  border: 1px solid #dedede;
+
+  border-radius: 25px;
+
+  background: #ffffff;
+
+  padding: 25px 28px;
+
+  margin-bottom: 18px;
+
+  overflow: hidden;
+}
+
+.info-card p {
+  font-size: 9.5px;
+
+  line-height: 2;
+
+  color: #e72c6d;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  font-style: italic;
+}
+
+.info-card .quote-name {
+  margin-top: 2px;
+
+  font-weight: 600;
+
+  color: #e72c6d;
+}
+
+/* =========================================================
+   BUTTON MENU
+========================================================= */
+
+.menu-card {
+  display: flex;
+
+  width: 100%;
+  height: 56px;
+
+  margin-top: 22px;
+
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #dc3678 0%, #d93b7b 35%, #504b9b 100%);
+
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.menu-card:hover {
+  filter: brightness(1.05);
+}
+
+.menu-card:active {
+  transform: scale(0.99);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  position: fixed;
+
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 340px;
+
+  height: 47px;
+
+  background: linear-gradient(90deg, #f45151, #8a292d);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 10px 0 25px;
+
+  z-index: 100;
+}
+
+.footer-text {
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.footer-logo {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-height: 35px;
+
+  width: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (min-width: 600px) {
+  body {
+    padding: 20px 0;
+  }
+
+  .mobile-page {
+    min-height: calc(100vh - 40px);
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .footer {
+    bottom: 20px;
+  }
+}
+
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+@media (max-width: 360px) {
+  .mobile-page {
+    max-width: 100%;
+  }
+
+  .content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .info-card {
+    padding: 22px 24px;
+  }
+
+  .info-card p {
+    font-size: 9px;
+    line-height: 1.95;
+  }
+
+  .menu-card {
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .footer {
+    max-width: 100%;
+  }
+}
